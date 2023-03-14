@@ -16,8 +16,44 @@
 
 <body>
     <div class="main-container">
-        <header></header>
+        
+        <!-- HEADER -->
+        <header>
+            <!-- LOGO --> 
+            <figure class="logo">
+                <a href="#"><img src="./images/logo/Booki.png" alt="booki logo"></a>
+            </figure>
+
+            <!-- NAV --> 
+            <nav>
+                <ul>
+                    <li><a href="#rentals__mainheader">Hébergements</a></li>
+                    <li><a href="#activities__mainheader">Activités</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <main>
+            <!-- FILTERS -->
+            <section class="filter__maincontainer">
+                <h1 class="mgtop-2rem">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="filter__innercity__subheading">En plein centre-ville ou en pleine nature</p>
+                <form class="form__search__location" method="post" action="#" role="search">
+                    <div class="search__location_iconcontainer"><i class="fa-solid fa-location-dot icon--size19"></i></div>
+                    <input class="search__textinput" type="search" placeholder="Marseille, France">
+                    <button class="search__btn-icon" type="submit" disabled><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="search__btn-text" type="submit" disabled>Rechercher</button>
+                </form>
+                <div class="filter__bar">
+                    <div class="filter__text">Filtres</div>
+                    <button class="filter__button"><i class="fa-solid fa-money-bill-wave icon--size19"></i>Économique</button>
+                    <button class="filter__button"><i class="fa-solid fa-person icon--size19"></i>Familial</button>
+                    <button class="filter__button"><i class="fa-solid fa-heart icon--size19"></i>Romantique</button>
+                    <button class="filter__button"><i class="fa-solid fa-fire icon--size19"></i>Nos pépites</button>
+                </div>
+                <p class="info__line"><span class="info__icon__container"><i class="fa-solid fa-info icon--size12"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
+            </section>       
+
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
