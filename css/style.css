@@ -22,9 +22,18 @@
   --selected-button-color: #deebff;
 }
 
-/*.fa-solid {
-  color: var(--main-color);
-}*/
+/** Margins **/
+.mgtop__2rem {
+  margin-top: 2rem;
+}
+
+.mgtop__1_5rem {
+  margin-top: 1.5rem;
+}
+
+.mgtop__1rem {
+  margin-top: 1rem;
+}
 
 body {
   display: flex;
@@ -332,10 +341,6 @@ nav a:hover:after {
   font-weight: 700;
 }
 
-.neutralStar {
-  color: var(--main-bg-color);
-}
-
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
@@ -398,6 +403,14 @@ nav a:hover:after {
   margin-bottom: 5px;
 }
 
+.card-rating {
+  color: var(--main-color);
+}
+
+.neutral-star {
+  color: var(--filter-borders-color);
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -436,6 +449,6 @@ nav a:hover:after {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
   /* ... */
 }
