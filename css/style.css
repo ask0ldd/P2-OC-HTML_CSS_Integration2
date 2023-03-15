@@ -451,5 +451,35 @@ nav a:hover:after {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
-  /* ... */
+  /*.form__search__location {
+    width: 100%;
+  }*/
+  body {
+    padding: 0 20px;
+  }
+
+  .search__textinput {
+    width: 100%;
+  }
+
+  .search__btn-icon {
+    display: flex;
+  }
+
+  .search__btn-text {
+    display: none;
+  }
+
+  .filter__button {
+    flex: 1 1 45%;
+    font-size: 14px;
+  }
 }
+
+@media (max-width: 345px) {
+  .filter__bar {
+    flex-direction: column;
+  }
+}
+
+/* 320px min */
