@@ -320,6 +320,7 @@ nav a:hover:after {
 
 .card img {
   object-fit: cover;
+  overflow-clip-margin: unset;
 }
 
 .card-title {
@@ -459,16 +460,32 @@ nav a:hover:after {
   width: 100%;
   display: flex;
   gap: 2rem;
+  padding: 2rem;
+  margin-top: 2rem;
 }
 
 .card-activities {
   width: 25%;
   height: 440px;
-  background-color: red;
+  background-color: white;
   overflow: hidden;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-activities img {
+  height: 380px;
+  width: 100%;
+  object-fit: cover;
+  overflow-clip-margin: unset;
+  object-position: center;
+}
+
+.card-activities div {
+  background-color: #fff;
+  height: 60px;
 }
 
 /****** Media queries ***********/
