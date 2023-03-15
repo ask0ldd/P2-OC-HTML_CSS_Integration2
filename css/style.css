@@ -115,7 +115,7 @@ body {
   font-size: 1rem;
   width: 100%;
   max-width: 1440px;
-  padding: 0 50px;
+  margin: 0 50px;
 }
 
 /** HEADER **/
@@ -184,15 +184,20 @@ nav a:hover:after {
 /** FILTERS **/
 
 .form__search__location {
-  height: 48px;
+  height: 50px;
   display: flex;
   margin-top: 1.5rem;
+  border: 1px solid var(--main-bg-color);
+  border-radius: 15px;
+  overflow: hidden;
+  width: fit-content;
 }
 
 .search__location_iconcontainer {
   background-color: var(--main-bg-color);
-  border-radius: 15px 0px 0px 15px;
-  width: 48px;
+  /*border-radius: 15px 0px 0px 15px;*/
+  width: 50px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,13 +209,14 @@ nav a:hover:after {
   display: flex;
   font-size: 1.125rem;
   border: none;
-  border: solid var(--main-bg-color);
+  /*border: solid var(--main-bg-color);*/
   border-width: 1px 0px 1px 0px;
   align-items: center;
   font-weight: 700;
   border-radius: 0;
   color: #000;
   width: 196px;
+  height: 100%;
 }
 
 .search__textinput:focus {
@@ -245,16 +251,20 @@ nav a:hover:after {
   letter-spacing: 0.5px;
   cursor: pointer;
   font-family: "Raleway", sans-serif;
+  z-index: 300;
+  height: 100%;
 }
 
 .search__btn-icon {
   display: none;
   padding: 0px 16px;
+  border-radius: 15px;
 }
 
 .filter__innercity__subheading {
   display: block;
-  line-height: 2.5rem;
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .filter__bar {
@@ -295,8 +305,9 @@ nav a:hover:after {
 
 .info__line {
   display: flex;
-  line-height: 2rem;
+  line-height: 1.5rem;
   margin-top: 2rem;
+  align-items: center;
 }
 
 .info__icon__container {
@@ -345,20 +356,20 @@ nav a:hover:after {
   margin-top: 2rem;
 }
 
-.rentals-and-popular-container section {
+/****** rentals ***********/
+.rentals {
+  width: 65%;
   background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 30px;
 }
 
-/****** rentals ***********/
-.rentals {
-  width: 65%;
-}
-
 /****** populars ***********/
 .populars {
   width: 32%;
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
 }
 
 .populars-title {
@@ -451,12 +462,59 @@ nav a:hover:after {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
-  /*.form__search__location {
+  .form__search__location {
     width: 100%;
-  }*/
+  }
+  header {
+    flex-direction: column;
+  }
+
+  header figure {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .logo {
+    margin-top: 0px;
+  }
+
+  nav,
+  nav ul {
+    width: 100%;
+    height: 60px;
+    margin-top: 0;
+  }
+  nav ul li {
+    width: 50%;
+  }
+
+  nav ul li a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li:first-child,
+  nav ul li:first-child a:any-link {
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+  }
+
+  nav a:hover:after {
+    display: none;
+  }
+
   body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .filter__maincontainer {
     padding: 0 20px;
   }
+
+  /*.filter__innercity__subheading {
+    line-height: 24px;
+  }*/
 
   .search__textinput {
     width: 100%;
@@ -473,6 +531,28 @@ nav a:hover:after {
   .filter__button {
     flex: 1 1 45%;
     font-size: 14px;
+  }
+
+  .rentals {
+    background-color: unset;
+    border-radius: 0;
+    padding: 2rem 1.25rem 2rem 1.25rem;
+  }
+
+  .populars {
+    padding: 2rem 1.25rem 2rem 1.25rem;
+    border-radius: 0;
+    border-color: red;
+  }
+
+  .populars-cards {
+    flex-direction: column;
+  }
+
+  .populars-cards .card {
+    width: 100%;
+    height: 144px;
+    margin-top: 1rem;
   }
 }
 
