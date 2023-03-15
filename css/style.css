@@ -186,7 +186,7 @@ nav a:hover:after {
 .form__search__location {
   height: 50px;
   display: flex;
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
   border: 1px solid var(--main-bg-color);
   border-radius: 15px;
   overflow: hidden;
@@ -269,7 +269,7 @@ nav a:hover:after {
 
 .filter__bar {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 2.25rem;
   font-weight: 700;
   flex-wrap: wrap;
   gap: 1rem 1rem;
@@ -319,10 +319,11 @@ nav a:hover:after {
   width: 24px;
   border-radius: 100px;
   border: 1px solid var(--filter-borders-color);
-  margin: 3px 11px 0 1px;
+  margin: 1px 11px 0 1px;
   display: flex;
   align-items: center;
   justify-content: center;
+  /*margin-top: -2px;*/
 }
 
 .section-title {
@@ -364,6 +365,33 @@ nav a:hover:after {
   padding: 30px;
 }
 
+.rentals-cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.rentals-cards .card {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.rentals-cards .card img {
+  height: 124px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.showmore {
+  margin-top: auto;
+}
+
 /****** populars ***********/
 .populars {
   width: 32%;
@@ -372,7 +400,8 @@ nav a:hover:after {
   padding: 30px;
 }
 
-.populars-title {
+.populars-title,
+.rentals-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -424,6 +453,10 @@ nav a:hover:after {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .info__icon__container i {
+    margin-top: -2px;
+  }
+
   .rentals-and-popular-container {
     flex-direction: column;
   }
@@ -539,10 +572,15 @@ nav a:hover:after {
     padding: 2rem 1.25rem 2rem 1.25rem;
   }
 
+  .rentals-and-popular-container {
+    flex-direction: column-reverse;
+  }
+
   .populars {
     padding: 2rem 1.25rem 2rem 1.25rem;
     border-radius: 0;
     border-color: red;
+    margin-top: 0;
   }
 
   .populars-cards {
