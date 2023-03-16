@@ -9,6 +9,10 @@
   list-style: none;
 }
 
+a:any-link {
+  color: #000;
+}
+
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
@@ -343,7 +347,7 @@ nav a:hover:after {
   width: 65%;
   background-color: var(--main-bg-color);
   border-radius: 20px;
-  padding: 30px;
+  padding: 30px 30px 25px 30px;
   display: flex;
   flex-direction: column;
 }
@@ -465,9 +469,14 @@ nav a:hover:after {
   margin-top: 2rem;
 }
 
-.card-activities {
-  width: 25%;
+.activities a {
+  flex: 1 1 33%;
   height: 440px;
+}
+
+.card-activities {
+  width: 100%;
+  height: 100%;
   background-color: white;
   overflow: hidden;
   border-radius: 20px;
@@ -482,11 +491,6 @@ nav a:hover:after {
   object-fit: cover;
   overflow-clip-margin: unset;
   object-position: center;
-}
-
-.card-activities div {
-  background-color: #fff;
-  height: 60px;
 }
 
 .card-activities h4 {
