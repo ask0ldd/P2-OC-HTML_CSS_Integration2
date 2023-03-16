@@ -305,7 +305,6 @@ nav a:hover:after {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*margin-top: -2px;*/
 }
 
 .section-title {
@@ -499,6 +498,7 @@ nav a:hover:after {
 
 .card-activities {
   width: 100%;
+  height: 100%;
   background-color: white;
   overflow: hidden;
   border-radius: 20px;
@@ -527,6 +527,7 @@ nav a:hover:after {
   padding: 0 18px;
 }
 
+/***** Footer *****/
 footer {
   display: flex;
   padding: 48px 0px 48px 32px;
@@ -568,6 +569,7 @@ footer ul {
     margin-top: 1.5rem;
   }
 
+  /***** Popular *****/
   .populars {
     width: 100%;
     margin-top: 50px;
@@ -596,6 +598,7 @@ footer ul {
     font-size: 13px;
   }
 
+  /***** Activities *****/
   .card-activities img {
     height: 200px;
   }
@@ -607,9 +610,7 @@ footer ul {
 
 /* Small devices (phones, < 768px) */
 @media (max-width: 767px) {
-  .form__search__location {
-    width: 100%;
-  }
+  /***** Header *****/
   header {
     flex-direction: column;
   }
@@ -622,6 +623,7 @@ footer ul {
     margin-top: 0px;
   }
 
+  /***** Nav *****/
   nav,
   nav ul {
     width: 100%;
@@ -658,6 +660,11 @@ footer ul {
     padding: 0;
   }
 
+  /***** Filters *****/
+  .form__search__location {
+    width: 100%;
+  }
+
   .filter__maincontainer {
     padding: 0 20px;
   }
@@ -679,6 +686,7 @@ footer ul {
     font-size: 14px;
   }
 
+  /***** Rentals *****/
   .rentals-and-popular-container {
     flex-direction: column-reverse;
   }
@@ -725,6 +733,7 @@ footer ul {
     display: none;
   }
 
+  /***** Populars *****/
   .populars {
     padding: 2rem 1.25rem 2rem 1.25rem;
     border-radius: 0;
@@ -745,6 +754,7 @@ footer ul {
     height: 100%;
   }
 
+  /***** Activities *****/
   .activities {
     padding: 2rem 2rem 0rem 2rem;
   }
@@ -761,10 +771,15 @@ footer ul {
     height: 60px;
   }
 
+  /***** Footer *****/
   footer {
     flex-direction: column;
     row-gap: 2.5rem;
     padding-top: 2rem;
+  }
+
+  footer ul {
+    width: 100%;
   }
 }
 
