@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -52,7 +52,8 @@
                 <p class="info__line"><span class="info__icon__container"><i class="fa-solid fa-info icon--size12"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
             </section>       
 
-            <div id="#rentals" class="rentals-and-popular-container">
+            <!-- RENTALS -->
+            <div id="rentals" class="rentals-and-popular-container">
                 <section class="rentals">
                     <div class="rentals-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
@@ -60,7 +61,7 @@
                     <div class="rentals-cards">
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/fred-kleber.jpg">
+                                <img src="./images/hebergements/fred-kleber.jpg" alt="Chambre d'hôtel luxueuse dans les tons verts">
                                 <h4>Hôtel du port</h4>
                                 <p>Nuit à partir de 52€</p>
                                 <div class="card-rating">
@@ -75,7 +76,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/febrian-zakaria.jpg">
+                                <img src="./images/hebergements/febrian-zakaria.jpg" alt="Chambre d'hôtel luxueuse dans les tons verts">
                                 <h4>Hôtel Chez Amina</h4>
                                 <p>Nuit à partir de 52€</p>
                                 <div class="card-rating">
@@ -90,7 +91,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/reisetopia.jpg">
+                                <img src="./images/hebergements/reisetopia.jpg" alt="Chambre d'hôtel luxueuse dans les tons verts">
                                 <h4>Hôtel Les mouettes</h4>
                                 <p>Nuit à partir de 52€</p>
                                 <div class="card-rating">
@@ -105,7 +106,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/annie-spratt.jpg">
+                                <img src="./images/hebergements/annie-spratt.jpg" alt="Chambre d'hôtel luxueuse dans les tons verts">
                                 <h4>Hôtel de la mer</h4>
                                 <p>Nuit à partir de 52€</p>
                                 <div class="card-rating">
@@ -120,7 +121,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/marcus-loke.jpg">
+                                <img src="./images/hebergements/marcus-loke.jpg" alt="Chambre d'hôtel luxueuse dans les tons verts">
                                 <h4>Auberge La Canebière</h4>
                                 <p>Nuit à partir de 52€</p>
                                 <div class="card-rating">
@@ -135,7 +136,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/nicate-lee.jpg">
+                                <img src="./images/hebergements/nicate-lee.jpg" alt="Chambre d'hôtel luxueuse dans les tons verts">
                                 <h4>Auberge Le Panier</h4>
                                 <p>Nuit à partir de 52€</p>
                                 <div class="card-rating">
@@ -151,6 +152,8 @@
                     </div>
                     <span class="showmore">Afficher plus</span>
                 </section>
+
+                <!-- POPULARS -->
                 <section class="populars">
                     <div class="populars-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -158,7 +161,7 @@
                     </div>
                     <div class="populars-cards">
                         <article class="card">
-                            <img src="./images/hebergements/emile-guillemot.jpg" alt="Chambre d'hôtel montrant un lit"> <!-- "image de" deja implicite du fait du tag -->
+                            <img src="./images/hebergements/emile-guillemot.jpg" alt="Chambre d'hôtel luxueuse dans les tons verts">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h4 class="card-title">Hôtel Le soleil du matin</h4>
@@ -175,7 +178,7 @@
                             </div>
                         </article>
                         <article class="card">
-                            <img src="./images/hebergements/aw-creative.jpg" alt="Chambre d'hôtel montrant un lit">
+                            <img src="./images/hebergements/aw-creative.jpg" alt="Chambre d'hôtel moderne et luxueuse">
                             <div class="card-content">
                                 <div class="card-txt">
                                     <h4 class="card-title">Chambres d’hôtes Au cœur de l’eau</h4>
@@ -211,35 +214,58 @@
                     </div>
                 </section>
             </div>
+
+            <!-- ACTIVITIES -->
             <section id="activities" class="activities">
-                <!-- titre -->
-                <a href="#">
-                    <article class="card-activities">
-                        <img src="./images/activites/reno-laithienne.jpg" alt="port peuplé de vedettes">
-                        <h4>Fort de Pomègues</h4>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="card-activities">
-                        <img src="./images/activites/paul-hermann.jpg" alt="port peuplé de vedettes">
-                        <h4>Fort de Pomègues</h4>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="card-activities">
-                        <img src="./images/activites/kilyan-sockalingum.jpg" alt="port peuplé de vedettes">
-                        <h4>Fort de Pomègues</h4>
-                    </article>
-                </a>
-                <a href="#">
-                    <article class="card-activities">
-                        <img src="./images/activites/florian-wehde.jpg" alt="port peuplé de vedettes">
-                        <h4>Fort de Pomègues</h4>
-                    </article>
-                </a>
+                <h2>Activités à Marseille</h2>
+                <div class="activities-cards">
+                    <a href="#">
+                        <article class="card-activities">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="port peuplé de vedettes">
+                            <h4>Fort de Pomègues</h4>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card-activities">
+                            <img src="./images/activites/paul-hermann.jpg" alt="fort au sommet d'une colline rocailleuse">
+                            <h4>Fort de Pomègues</h4>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card-activities">
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="crique et falaises">
+                            <h4>Fort de Pomègues</h4>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card-activities">
+                            <img src="./images/activites/florian-wehde.jpg" alt="monastère surplombant une ville">
+                            <h4>Fort de Pomègues</h4>
+                        </article>
+                    </a>
+                </div>
             </section>
         </main>
-        <footer></footer>
+
+        <!-- FOOTER -->
+        <footer>
+            <ul>
+                <li><h3>À propos</h3></li>
+                <li class="mgtop-1_5rem"><a href="#">Fonctionnement du site</a></li>
+                <li class="mgtop-1rem"><a href="#">Conditions générales</a></li>
+                <li class="mgtop-1rem"><a href="#">Données et confidentialité</a></li>
+            </ul>
+            <ul>
+                <li><h3>Nos hébergements</h3></li>
+                <li class="mgtop-1_5rem"><a href="#">Charte qualité</a></li>
+                <li class="mgtop-1rem"><a href="#">Proposer votre hôtel</a></li>
+            </ul>
+            <ul>
+                <li><h3>Assistance</h3></li>
+                <li class="mgtop-1_5rem"><a href="#">Centre d’aide</a></li>
+                <li class="mgtop-1rem"><a href="#">Nous contacter</a></li>
+            </ul>
+        </footer>
 </body>
 
 </html>
