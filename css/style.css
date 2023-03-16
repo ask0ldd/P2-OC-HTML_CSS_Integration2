@@ -323,6 +323,10 @@ nav a:hover:after {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 
+.card:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1), 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
 .card img {
   object-fit: cover;
   /*overflow-clip-margin: unset;*/
@@ -495,6 +499,10 @@ nav a:hover:after {
   display: flex;
   flex-direction: column;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-activities:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1), 0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
 .card-activities img {
