@@ -546,6 +546,11 @@ footer ul {
 /********************************/
 /****** Media queries ***********/
 /********************************/
+@media (max-width: 1176px) {
+  .showmore {
+    margin-top: 1.5rem;
+  }
+}
 
 /* Medium devices (tablets, >= 1024px) */
 @media (max-width: 1024px) {
@@ -590,13 +595,13 @@ footer ul {
     height: 100%;
   }
 
-  .populars-cards .card-title {
+  /*.populars-cards .card-title {
     font-size: 14px;
-  }
+  }*/
 
-  .populars-cards .card-subtitle {
+  /*.populars-cards .card-subtitle {
     font-size: 13px;
-  }
+  }*/
 
   /***** Activities *****/
   .card-activities img {
